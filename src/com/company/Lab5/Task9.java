@@ -8,7 +8,7 @@ public class Task9 {
         double Sc,Ss,d,e;
         Sc=s.nextDouble();
         Ss=s.nextDouble();
-        d=(Math.sqrt(Sc)/Math.PI)*2;
+        d=(Math.sqrt(Sc/Math.PI))*2;
         e=Math.sqrt(Ss);
         if (Sc<0) {
             System.out.println("Площадь круга должна быть положительной");
