@@ -4,16 +4,25 @@ import java.util.Scanner;
 
 public class Task8 {
     public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         double totalInM;
-        totalInM=s.nextDouble();
         double partInCm;
-        partInCm=s.nextDouble();
         double result1;
-        result1=totalInM/partInCm*100;
         double result2;
-        result2=totalInM-result1*partInCm/100;
-        System.out.printf("%.0f шт %.0f см",result1,result2);
+        totalInM = s.nextDouble();
+        partInCm = s.nextDouble();
+        if (totalInM < 0) {
+            System.out.println("Значение totalInM должно быть положительным");
+            return;
+        }
+        if (partInCm < 0) {
+            System.out.println("Значение partInCm должно быть положительным");
+            return;
+        } else {
+            result1 = (totalInM * 100) / partInCm;
+            result2 = (totalInM * 100) % partInCm;
+            System.out.printf("%.0f шт %.0f см", result1, result2);
+        }
 
     }
 }
