@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task14 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int A, B, r;
+        long A, B, r;
         A = s.nextInt();
         B = s.nextInt();
         r = 1;
@@ -18,10 +18,10 @@ public class Task14 {
             }
         } else {
             while (B <= A) {
-                System.out.print(B);
+                System.out.println(B);
                 r = r * B;
                 B = B + 1;
-                System.out.println(r + " ");
+                System.out.print(r + " ");
             }
         }
     }

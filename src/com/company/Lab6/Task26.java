@@ -2,18 +2,16 @@ package com.company.Lab6;
 
 import java.util.Scanner;
 
-public class Task15 {
+public class Task26 {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        double a,b,r;
-        a=20;
-        b=40;
-        r=0;
-        while (a<=b) {
+        int a=100,b=1000,D=13;
+        while (a<b) {
             System.out.println(a);
-            r=r+Math.pow(a,3);
             a=a+1;
-            System.out.print(r+" ");
+            if (a%D==0) {
+                System.out.println(a);
+            }
         }
     }
 }
