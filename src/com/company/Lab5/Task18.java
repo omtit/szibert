@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Task18 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        double A, b, c;
-        A = s.nextDouble();
-        b = A % 1000;
+        int A, b, c, d;
+        A = s.nextInt();
+        b = A / 100;
+        d = b % 10;
         c = A % 10;
         if (A < 1000) {
             System.out.println("Значение A должно быть в интервале [1000, 9999]");
@@ -17,11 +18,10 @@ public class Task18 {
             System.out.println("Значение A должно быть в интервале [1000, 9999]");
             return;
         }
-        if (b == c) {
+        if (d == c) {
             System.out.println("равно");
             return;
-        }
-        if (b < c || b > c) {
+        } else {
             System.out.println("не равно");
         }
     }

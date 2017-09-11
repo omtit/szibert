@@ -13,9 +13,7 @@ public class Task7 {
                 System.out.print(A + " ");
                 A = A + 1;
             }
-            return;
-        }
-        if (A > B) {
+        } else {
             while (B <= A) {
                 System.out.print(A + " ");
                 A = A - 1;

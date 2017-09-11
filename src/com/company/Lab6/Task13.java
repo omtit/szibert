@@ -11,18 +11,14 @@ public class Task13 {
         sum = 0;
         if (A < B) {
             while (A <= B) {
-                System.out.println(A);
                 sum = sum + A;
                 A = A + 1;
-                System.out.print(sum + " ");
-            }
+            } System.out.print(sum);
         } else {
             while (B <= A) {
-                System.out.println(B);
                 sum = sum + B;
                 B = B + 1;
-                System.out.print(sum + " ");
-            }
+            } System.out.print(sum);
         }
     }
 }

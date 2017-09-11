@@ -11,13 +11,8 @@ public class Task8 {
         double result2;
         totalInM = s.nextDouble();
         partInCm = s.nextDouble();
-        if (totalInM < 0) {
+        if (totalInM < 0 && partInCm < 0) {
             System.out.println("Значение totalInM должно быть положительным");
-            return;
-        }
-        if (partInCm < 0) {
-            System.out.println("Значение partInCm должно быть положительным");
-            return;
         } else {
             result1 = (totalInM * 100) / partInCm;
             result2 = (totalInM * 100) % partInCm;

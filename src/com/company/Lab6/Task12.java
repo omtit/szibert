@@ -14,11 +14,9 @@ public class Task12 {
             System.out.println("Значение b должно быть в интервале [-10,10000]");
         } else {
             while (x <= B) {
-                System.out.println(B);
                 sum = sum + B;
                 B = B - 1;
-                System.out.print(sum + " ");
-            }
+            } System.out.print(sum);
         }
     }
 }

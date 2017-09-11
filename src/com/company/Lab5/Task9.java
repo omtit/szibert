@@ -18,11 +18,7 @@ public class Task9 {
             System.out.println("Площадь квадрата должна быть положительной");
             return;
         }
-        if (d < e) {
-            System.out.println("Круг уместится в квадрате");
-            return;
-        }
-        if (d == e) {
+        if (d <= e) {
             System.out.println("Круг уместится в квадрате");
             return;
         } else {

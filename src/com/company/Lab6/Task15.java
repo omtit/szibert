@@ -10,10 +10,8 @@ public class Task15 {
         b=40;
         r=0;
         while (a<=b) {
-            System.out.println(a);
             r=r+Math.pow(a,3);
             a=a+1;
-            System.out.print(r+" ");
-        }
+        } System.out.print(r);
     }
 }

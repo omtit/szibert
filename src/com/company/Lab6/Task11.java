@@ -14,11 +14,9 @@ public class Task11 {
             System.out.println("Значение A должно быть в интервале [-100, 500]");
         } else {
             while (x <= A && A <= y) {
-                System.out.println(A);
                 sum = sum + A;
                 A = A + 1;
-                System.out.print(sum + " ");
-            }
+            } System.out.println(sum);
         }
     }
 }
