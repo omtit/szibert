@@ -1,15 +1,22 @@
 package com.company.Lab8;
 
 import java.util.Scanner;
-public class Task4 {
+
+public class Task9 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
         String[] arr = str.split(" ");
-        double sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + Integer.parseInt(arr[i]);
+        String A;
+        int a = arr.length - 1;
+        A = arr[a];
+        while (a > 0) {
+            arr[a] = arr[a - 1];
+            a = a - 1;
         }
-        System.out.println(sum/arr.length);
+        arr[0] = A;
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
