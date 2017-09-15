@@ -17,7 +17,7 @@ public class Task5 {
             arr3[i] = c;
         }
         for (int a = 0; a < arr3.length; a++) {
-            System.out.print(arr3[a]+" ");
+            System.out.print(arr3[a] + " ");
         }
     }
 }
