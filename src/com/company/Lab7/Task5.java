@@ -12,11 +12,17 @@ public class Task5 {
         int CA, CB;
         CA=s.nextInt();
         CB=s.nextInt();
+        if (CA<0 || CA>str.length()) {
+            System.out.println("Значение CA должно быть в интервале [0,длина строки)");
+            return;
+        }
+        if (CB<0 || CB> str.length()) {
+            System.out.println("Значение CB должно быть в интервале [0,длина строки)");
+            return;
+        }
         if (CA>CB) {
             System.out.println("Значение CA должно быть меньше CB");
-        }
-        if (CA<0 || CB<0) {
-            System.out.println("Значение CA должно быть в интервале [0,длина строки)");
+            return;
         }
         String b=str.substring(CA,CB+1);
         System.out.println(b);

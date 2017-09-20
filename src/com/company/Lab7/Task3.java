@@ -2,24 +2,23 @@ package com.company.Lab7;
 
 import java.util.Scanner;
 
-public class Task6 {
+public class Task3 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         String str = "abcdefwxyz";
-        String CA, CB;
-        CA = s.nextLine();
+        String CA = s.nextLine();
         if (str.contains(CA)) {
-            CB = s.nextLine();
-            if (str.contains(CA)) {
-                int a = str.indexOf(CA);
-                int b = str.indexOf(CB);
-                if (a < b) {
-                    String T = str.substring(a + 1, b);
-                    System.out.println(T);
+            String CB = s.nextLine();
+            if (str.contains(CB)) {
+                int ca = str.indexOf(CA);
+                int cb = str.indexOf(CB);
+                if (ca < cb) {
+                    String a = str.substring(ca + 1, cb);
+                    System.out.println(a.length());
                 }
-                if (b < a) {
-                    String T = str.substring(b + 1, a);
-                    System.out.println(T);
+                if (cb < ca) {
+                    String a = str.substring(cb + 1, ca);
+                    System.out.println(a.length());
                 }
             } else {
                 System.out.println("Значение CB отсутствует в строке");
