@@ -8,18 +8,19 @@ public class Task10 {
         String str = s.nextLine();
         String[] arr = str.split(" ");
         int S = s.nextInt();
-        String A;
         int p = 0;
-        int a = arr.length - 1;
-        A = arr[a];
-        while (p <= S) {
-            p++;
+        while (p < S) {
+            String A;
+            int a = arr.length - 1;
+            A = arr[a];
             while (a > 0) {
                 arr[a] = arr[a - 1];
                 a--;
             }
+            arr[0] = A;
+            p++;
         }
-        arr[0] = A;
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }

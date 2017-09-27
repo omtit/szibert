@@ -7,6 +7,7 @@ public class Task9 {
         Scanner s = new Scanner(System.in);
         String str = s.nextLine();
         String[] arr = str.split(" ");
+
         String A;
         int a = arr.length - 1;
         A = arr[a];
@@ -15,6 +16,7 @@ public class Task9 {
             a = a - 1;
         }
         arr[0] = A;
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
